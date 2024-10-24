@@ -1,0 +1,324 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px; padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --cor1: #253659;
+    --cor2: #21798e;
+    --cor3: #04BF9D;
+    --cor4: #F27457;
+    --cor5: #BF665E;
+    --shadow: #00000041;
+}
+
+p{
+    font-size: 20px;
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1{
+    font-size: xx-large;
+
+}
+
+h1, h2{
+    margin-bottom: 10px;
+}
+
+header{
+    top:0;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.5), black);
+}
+
+#logo{
+    height: 100px;
+    padding-left: 30px;
+}
+
+#navegacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.pesquisa{
+    background-color: #fff;
+    height: 40px;
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px var(--shadow);
+}
+
+.lupa{
+    height: 15px;
+    padding-right: 10px;
+}
+
+.barra{
+    height: 100%;
+    width: 100%;
+    border: #fff;
+    left: 0;
+    border-radius: 25px;
+    font-size: 16px;
+}
+
+.imageNav{
+    height: 30px;   
+}
+
+.funcoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: none;
+    border: none;
+}
+
+.funcoes p{
+    padding-left: 8px;
+}
+
+.funcoes:hover{
+    color: aqua;
+    border-top: 1px solid aqua;
+    
+}
+
+#cadastroBackground{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    transition: all background 2s;
+
+}
+
+#cadastroBackground div{
+    position: static;
+    background-color: #fff;
+    box-shadow:5px 5px 3px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    height: 400px;
+    left: 50vw;
+    transition: background 2s;
+    border-radius: 20px;
+}
+
+#cadastroBackground button{
+    font-size: 20px;
+    float: right;
+    border: none;
+    background-color: #fff;
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#background{
+    width: 100%;
+    height: 700px;
+    position: relative;
+    z-index: -2;
+}
+
+#conteudo{
+    position: absolute;
+    top: 380px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 120px;
+    margin-right: 120px;
+    background-color: #fff;
+    border-radius: 30px;
+    border: 1px solid var(--shadow); 
+    box-shadow: 3px 3px 3px var(--shadow);
+    
+
+}
+
+#main img{
+    height: 300px;
+    margin: 10px;
+}
+
+article{
+    padding: 20px;
+}
+
+article p{
+    padding-left: 1.5em;
+}
+
+#historia img{
+    height: 300px;
+    margin: 10px;
+}
+
+figure{
+    float:right;
+}
+
+
+footer img{
+    height: 200px;
+    width: 400px;
+}
+
+@media screen and (max-width: 770px) {
+    
+    
+p{
+    font-size: 20px;
+}
+
+hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1{
+    font-size: xx-large;
+
+}
+
+h1, h2{
+    margin-bottom: 10px;
+}
+
+header{
+    top:0;
+}
+#logo{
+    height: 20px;
+    padding-left: 10px;
+}
+
+#navegacao{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.pesquisa{
+    display: flex;
+    height: 30px;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.lupa{
+    height: 8px;
+    padding-right: 10px;
+}
+
+.barra{
+    height: 100%;
+    width: 100%;
+    font-size: 8px;
+}
+
+.imageNav{
+    height: 15px;   
+}
+
+.funcoes{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: none;
+    border: none;
+    font-size: 12px;
+}
+
+.funcoes p{
+    padding-left: 8px;
+    font-size: 12px;
+}
+
+#background{
+    height: 450px;
+}
+
+#conteudo{
+    position: absolute;
+    top: 200px;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    border: 1px solid var(--shadow); 
+
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+#main img{
+    height: 300px;
+    margin: 10px;
+}
+
+article{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figure{
+    float: none;
+}
+
+article p{
+    padding-left: 1em;
+}
+
+#historia img{
+    height: 300px;
+    margin: 10px;
+}
+
+
+
+}
